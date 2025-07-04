@@ -1,0 +1,72 @@
+{% extends 'enroll/base.html' %}
+{% block content %} 
+<style> 
+    .error { color: red; } 
+    </style>
+<h1>Java Script validation form</h1>
+<form id="myForm"> 
+    <label for="name">Name:</label> 
+    <input type="text" id="name" name="name"> 
+    <span class="error" id="nameError"></span> 
+    <br><br> 
+
+    <label for="email">Email:</label> 
+    <input type="text" id="email" name="email"> 
+    <span class="error" id="emailError"></span> 
+    <br><br> 
+
+    <label for="password">Password:</label> 
+    <input type="password" id="password" name="password"> 
+    <span class="error" id="passwordError"></span> 
+    <br><br> 
+
+    <button type="submit">Submit</button> 
+</form> 
+
+<script> 
+    
+document.getElementById("myForm").addEventListener("submit", 
+function(event) { 
+        let valid = true; 
+
+        // Name Validation 
+        let name = document.getElementById("name").value; 
+        let nameError = document.getElementById("nameError"); 
+        if (name.trim() === "") { 
+            nameError.textContent = "Name is required"; 
+            valid = false; 
+        } else { 
+            nameError.textContent = ""; 
+        } 
+
+        // Email Validation 
+        let email = document.getElementById("email").value; 
+        let emailError = document.getElementById("emailError"); 
+        let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
+        if (!email.match(emailPattern)) { 
+            emailError.textContent = "Enter a valid email"; 
+            valid = false; 
+        } else { 
+            emailError.textContent = ""; 
+        } 
+
+        // Password Validation (at least 6 characters) 
+        let password = 
+document.getElementById("password").value; 
+        let passwordError = 
+document.getElementById("passwordError"); 
+        if (password.length < 6) { 
+            passwordError.textContent = "Password must be at 
+least 6 characters long"; 
+            valid = false; 
+        } else { 
+            passwordError.textContent = ""; 
+        } 
+
+        if (!valid) { 
+            event.preventDefault(); // Stop form submission if 
+validation fails 
+        } 
+    }); 
+</script>
+{% endblock content %}
