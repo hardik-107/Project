@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #050b18;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+}
+
+.nav-left .logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-left .subtitle {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.nav-right button {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
+.nav-right button:hover {
+  color: #b38bff;
+}
+
+/* PAGE LAYOUT */
+.chat-page {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.page-title {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/* CHAT INPUT */
+.chat-input-area {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  display: flex;
+  gap: 15px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 18px;
+  border-radius: 30px;
+  background: #0c1424;
+  border: 1px solid #1e2a3e;
+  color: white;
+  font-size: 16px;
+}
+
+.chat-input.large {
+  height: 180px;
+  border-radius: 20px;
+}
+
+.chat-send {
+  background: #8f5eff;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.chat-send:hover {
+  background: #a776ff;
+}
+
+/* AI DETECT BOX */
+.detect-box {
+  width: 70%;
+  height: 200px;
+  margin: 30px auto;
+  padding: 20px;
+  color: white;
+  background: #0c1424;
+  border: 1px solid #1e2a3e;
+  border-radius: 20px;
+  display: block;
+  font-size: 16px;
+}
+.page-with-sidebar {
+  display: flex;
+}
+
+.content-right {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+}
+
+/* Navbar Active GLOW */
+.nav-right button.active {
+  color: #bb86ff;
+  background: rgba(170, 100, 255, 0.18);
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+.thinking {
+  text-align: center;
+  font-size: 14px;
+  color: #9f9f9f;
+  margin-bottom: 10px;
+  animation: pulse 1.4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%   { opacity: 0.3; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.3; }
+}
