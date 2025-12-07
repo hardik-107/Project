@@ -52,4 +52,46 @@ Lumina-AI/
 │   ├── src/
 │   │   ├── components/   # Modular React components (Chat, Detect, Code)
 │   │   └── App.jsx       # Client-side routing and layout
+
 │   └── package.json      # Frontend dependencies
+
+## Installation and Deployment
+
+Follow these steps to set up the environment locally.
+
+### Prerequisites
+
+Ensure the following tools are installed on your system:
+* **Python 3.10+**
+* **Node.js** (v16 or higher) and npm
+* **Ollama** (for local LLM inference)
+
+### 1. Repository Setup
+
+Clone the repository and navigate to the project root:
+
+```bash
+git clone [https://github.com/yourusername/Lumina-AI.git](https://github.com/yourusername/Lumina-AI.git)
+cd Lumina-AI
+
+cd backend
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the API server
+uvicorn main:app --reload
+
+cd frontend
+
+# Install Node modules
+npm install
+
+# Launch the development server
+npm run dev
+
+# Pull the model (run this once)
+ollama pull llama3.2
+
+# Serve the model
+ollama serve
