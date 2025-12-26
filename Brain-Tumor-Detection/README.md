@@ -37,3 +37,7 @@ The deployment features a professional dashboard for real-time diagnostics:
 1. **Clone the Repo:**
    ```bash
    git clone [https://github.com/hardik-107/Brain-Tumor-Detection.git](https://github.com/hardik-107/Brain-Tumor-Detection.git)
+
+
+Here is Demo Video for Authenticity:https://youtu.be/LJZZe2sh1ZU
+
