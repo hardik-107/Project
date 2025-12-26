@@ -57,5 +57,7 @@ The pipeline consists of the following stages:
 
 The trained model weights (`neuroguard_epoch20.pth`) are stored in the `models/` directory. Ensure this file is present before running the inference engine.
 
----
+--- neuroguard_epoch20.pth cannot be saved due to big size below here i have attached working of system
+https://youtu.be/oYAIdMv1hm0
+
 **Developed by Hardik Tiwari**
