@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+
+opencv-python-headless
+# Install CPU-only PyTorch (Crucial for free tier!)
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
+ftfy
+regex
+tqdm
+git+https://github.com/openai/CLIP.git
+pillow
+numpy
