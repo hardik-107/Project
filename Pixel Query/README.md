@@ -1,7 +1,6 @@
-# 🧠 PixelQuery AI - Semantic Video Search Engine
+# PixelQuery AI - Semantic Video Search Engine
 
-![PixelQuery Banner](https://via.placeholder.com/1200x400?text=PixelQuery+AI+Preview)
-*(Add a screenshot of your UI here later)*
+
 
 **PixelQuery AI** is a video search engine that allows users to search inside video content using natural language queries. Instead of relying on metadata or tags, it uses **Multimodal AI (OpenAI CLIP)** to understand the visual content of every frame.
 
@@ -40,5 +39,6 @@ Follow these steps to run the project locally.
 * Python 3.8+
 * Node.js & npm
 * NVIDIA GPU (Optional, but recommended for speed)
+
 
 
