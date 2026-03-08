@@ -33,3 +33,12 @@ The entire pipeline is optimized for edge computing, enabling full offline infer
    ```bash
    git clone [https://github.com/hardik-107/Project.git](https://github.com/hardik-107/Project.git)
    cd Project/"Text To SQL Agent"
+
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+2.Install dependencies:
+
+pip install torch transformers peft accelerate bitsandbytes langchain langchain-core langchain-community langchain-classic langchain-huggingface sqlalchemy
+
+Developed By Hardik Tiwari
