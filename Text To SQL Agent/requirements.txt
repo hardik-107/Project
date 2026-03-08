@@ -1,0 +1,9 @@
+torch
+transformers
+peft
+trl
+bitsandbytes
+langchain
+langchain-community
+pandas
+sqlalchemy
